@@ -1,0 +1,74 @@
+name: Deploy Quartz site to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out notes
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0 # Quartz reads git history for note timestamps
+          path: notes
+
+      - name: Read pinned Quartz version
+        id: quartz
+        run: echo "ref=$(cat notes/quartz.ref)" >> "$GITHUB_OUTPUT"
+
+      - name: Check out Quartz engine
+        uses: actions/checkout@v6
+        with:
+          repository: jackyzha0/quartz
+          ref: ${{ steps.quartz.outputs.ref }}
+          path: engine
+
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: engine/package-lock.json
+
+      - name: Install dependencies
+        working-directory: engine
+        run: npm ci
+
+      - name: Install Quartz plugins
+        working-directory: engine
+        run: npx quartz plugin install
+
+      - name: Apply site configuration
+        run: cp notes/quartz.config.yaml engine/quartz.config.yaml
+
+      - name: Build Quartz
+        working-directory: engine
+        run: npx quartz build -d ../notes/content
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: engine/public
+
+  deploy:
+    needs: build
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
