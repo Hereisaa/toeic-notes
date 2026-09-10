@@ -5,7 +5,7 @@ tags:
   - english/toeic
   - status/growing
 created: 2026-09-03
-updated: 2026-09-09
+updated: 2026-09-10
 aliases:
   - TOEIC Grammar Cheatsheet
 exam: toeic
@@ -37,6 +37,8 @@ book: 閱讀題庫大全
 - 助動詞（will、can、must、should、may）後一律**原形**；have 後 p.p.；be 後 V-ing 或 p.p.。
 - 及物動詞直接接受詞（discuss、attend、contact、approach），不加介系詞；不及物動詞要接介系詞才能接受詞（respond **to**、participate **in**）。
 - 建議／要求動詞（suggest、recommend、request、require、insist）+ that + S + **原形**。
+- 使役三類：make／let／have + O + **原形**（help 兩種都行）；get／force／cause／allow／enable + O + **to V**；leave／keep + O + **V-ing 或 p.p.**。受詞是被動關係時一律 p.p.（have the car **repaired**）。
+- 感官動詞 see／watch／hear／notice／feel + O + **原形**（全程）或 **V-ing**（進行中），被動關係用 p.p.；make 與感官動詞改成被動時 to 要補回來（be made **to** work、be seen **to** enter）。
 
 ### 04 動詞與主詞的單複數一致 → [[文法04 動詞與主詞的單複數一致]]
 - 劃掉主詞後的修飾語再看單複數：The manager ~~of the branches~~ **is**…
@@ -72,7 +74,9 @@ book: 閱讀題庫大全
 - 表目的：to V、in order to、so as to；enable／allow／require／expect／ask + O + to V。
 
 ### 08 動名詞 → [[文法08 動名詞]]
-- 只接 V-ing：enjoy、avoid、consider、suggest、recommend、finish、mind、postpone、delay、keep、practice、admit、deny、discontinue、risk、appreciate。
+- 只接 V-ing：enjoy、avoid、consider、contemplate、imagine、envision、suggest、recommend、propose、discuss、finish、mind、postpone、delay、defer、keep、practice、admit、deny、discontinue、risk、anticipate、appreciate。
+- 口訣：**to V 是箭頭**（朝目標前進：decide／plan／expect to V）、**V-ing 是畫面**（拿在腦中端詳、往後挪、設法避開）。事情沒發生也不代表要用 to V。
+- 易混：anticipate **V-ing** vs expect **to V**；consider **V-ing**（考慮做）vs consider + O + (to be) + N／Adj（認為是）；prevent／stop／keep + O + **from** + V-ing。
 - 介系詞後一律 V-ing：look forward to、be used／accustomed to、object to、be committed to、contribute to、in addition to、instead of、by、upon。
 - 動名詞可直接接受詞（**reviewing** the contract）；-tion 名詞要加 of（the **review** of the contract）。
 - stop／remember／forget + to V 與 V-ing 意思不同。
@@ -98,7 +102,8 @@ book: 閱讀題庫大全
 - those who（那些人）；those／that of 代替前面名詞做比較；its 是所有格、it is 的縮寫是另一個字。
 
 ### 12 形容詞 → [[文法12 形容詞]]
-- 位置：冠詞／所有格 + ___ + 名詞；be／become／remain／seem + ___。
+- 位置：冠詞／所有格 + ___ + 名詞；連綴動詞 + ___。
+- 連綴動詞三群：狀態 be／remain／stay／keep／prove；變化 become／turn／grow／go／fall；感官 look／sound／smell／taste／feel／seem／appear。後面一律形容詞，不放副詞（seem clearly ✗）；look／feel／grow 當一般動詞時才接副詞。
 - 字尾：-ive、-ous、-ful、-less、-able／-ible、-al、-ic、-ent／-ant；-ly 形容詞：timely、costly、friendly、likely。
 - 數量形容詞：many／few／several／a number of + 複數；much／little／a great deal of + 不可數；each／every／another + 單數；all／both + 複數。
 - 形近字：considerable（相當多的）／considerate（體貼的）；successful／successive；economic／economical；confident／confidential。
