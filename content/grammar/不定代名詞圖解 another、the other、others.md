@@ -186,14 +186,14 @@ flowchart TD
 6. Many scholars who attended the seminar strongly believe they can learn much from ______ participants.
    (A) another (B) others (C) the other (D) one another
 
-**解答與解析**
-1. (C)　總共只有兩個，第二個必然是特定的那一個 → the other。情境 A。
-2. (B)　前面有 some 呼應、空格後沒有名詞、也沒把總數講死 → others。情境 E。
-3. (A)　another + 數字 + 複數名詞（three days 視為一個單位）→ another。常見誤解節的例外。
-4. (C)　總數 twelve 已框死、四件核准，其餘全部被拒 → the others。情境 D。
-5. (D)　空格後有複數名詞 products，others／the others 不能接名詞，another 只接單數 → some other。情境 F。
-6. (C)　空格後是複數名詞 participants：another 只接單數，others 與 one another 都不能修飾名詞；範圍已被 the seminar 框死 → the other participants（= the others）。情境 G。
-   - 若把 participants 刪掉，(B)(D) 就都成立：learn much from **others**（其他人）／learn much from **one another**（彼此互相）。
+> [!success]- 解答與解析
+> 1. (C)　總共只有兩個，第二個必然是特定的那一個 → the other。情境 A。
+> 2. (B)　前面有 some 呼應、空格後沒有名詞、也沒把總數講死 → others。情境 E。
+> 3. (A)　another + 數字 + 複數名詞（three days 視為一個單位）→ another。常見誤解節的例外。
+> 4. (C)　總數 twelve 已框死、四件核准，其餘全部被拒 → the others。情境 D。
+> 5. (D)　空格後有複數名詞 products，others／the others 不能接名詞，another 只接單數 → some other。情境 F。
+> 6. (C)　空格後是複數名詞 participants：another 只接單數，others 與 one another 都不能修飾名詞；範圍已被 the seminar 框死 → the other participants（= the others）。情境 G。
+>    - 若把 participants 刪掉，(B)(D) 就都成立：learn much from **others**（其他人）／learn much from **one another**（彼此互相）。
 
 ## 相關概念
 - [[文法11 代名詞]]（本頁的母章節，考點 3）
