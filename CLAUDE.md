@@ -5,6 +5,8 @@
 ## 結構
 - `content/`：**產生物**，由 `npm run sync` 從 vault 鏡像而來，不要手動編輯。筆記正本在 `knowledge-vault/30-TOEIC/`。
 - `site/index.md`：網站首頁正本，同步時複製成 `content/index.md`。
+- `site/custom.scss`：自訂樣式（隱藏重複的內文 H1；手機版隱藏 Properties、3 欄以上表格改成帶欄名的卡片）；建置時覆蓋引擎的 `quartz/styles/custom.scss`。
+- `site/plugins/`：自寫的 Quartz plugin（`table-labels` 把表頭寫進每格的 `data-label` 給卡片樣式用）；建置時複製成引擎的 `site-plugins/`，設定檔以 `./site-plugins/<name>` 引用。
 - `quartz.config.yaml`：Quartz 設定；建置時複製進引擎目錄。
 - `quartz.ref`：釘選的 Quartz commit SHA，升級只改這一行。
 - `scripts/sync-notes.mjs`：同步腳本；來源已消失的檔案移到 `~/.ai-trash/`，不直接刪除。

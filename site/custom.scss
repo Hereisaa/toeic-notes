@@ -1,0 +1,76 @@
+@use "./variables.scss" as *;
+
+// Copied over the engine's quartz/styles/custom.scss at build time.
+
+// Every note repeats its title as a `# heading` on the first body line, and
+// the article-title component already renders it above the metadata. Hide the
+// duplicate so the page starts with content.
+article.popover-hint > div > h1:first-child {
+  display: none;
+}
+
+@media all and ($mobile) {
+  // The Properties box (tags/aliases) costs a full screen of scrolling on a
+  // phone and wraps tags mid-word. Reviewing on the go does not need it.
+  .note-properties {
+    display: none;
+  }
+
+  .table-container > table {
+    margin: 1rem 0;
+    padding: 0;
+
+    th,
+    td {
+      min-width: 0;
+      font-size: 0.95rem;
+    }
+
+    & > * {
+      line-height: 1.6rem;
+    }
+  }
+
+  // Multi-column tables squeezed into ~390px wrap every cell into a tall,
+  // narrow column and push the rightmost columns off-screen. Tables with three
+  // or more columns are rendered as stacked cards instead: each row becomes a
+  // card, its first cell is the card title, and every other cell gets its own
+  // line prefixed with the column name (data-label, set by site/plugins/
+  // table-labels at build time).
+  .table-container > table:has(th:nth-child(3)) {
+    display: block;
+    width: 100%;
+
+    thead {
+      display: none;
+    }
+
+    tbody {
+      display: block;
+    }
+
+    tbody tr {
+      display: block;
+      padding: 0.6rem 0;
+    }
+
+    td {
+      display: block;
+      padding: 0;
+      text-align: left !important;
+    }
+
+    td:first-child {
+      font-weight: 600;
+      color: var(--dark);
+    }
+
+    td:not(:first-child)[data-label]::before {
+      content: attr(data-label);
+      display: inline-block;
+      margin-right: 0.5rem;
+      font-size: 0.8rem;
+      color: var(--gray);
+    }
+  }
+}

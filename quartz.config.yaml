@@ -72,6 +72,10 @@ plugins:
     layout:
       position: right
       priority: 30
+  # Local plugin copied from site/plugins/ by scripts/build.mjs and deploy.yml.
+  - source: "./site-plugins/table-labels"
+    enabled: true
+    order: 45
   - source: "@quartz-community/crawl-links"
     enabled: true
     options:

@@ -46,12 +46,15 @@ jobs:
         working-directory: engine
         run: npm ci
 
+      - name: Apply site configuration
+        run: |
+          cp notes/quartz.config.yaml engine/quartz.config.yaml
+          cp notes/site/custom.scss engine/quartz/styles/custom.scss
+          cp -r notes/site/plugins engine/site-plugins
+
       - name: Install Quartz plugins
         working-directory: engine
         run: npx quartz plugin install
-
-      - name: Apply site configuration
-        run: cp notes/quartz.config.yaml engine/quartz.config.yaml
 
       - name: Build Quartz
         working-directory: engine

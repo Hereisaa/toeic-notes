@@ -1,0 +1,18 @@
+{
+  "name": "table-labels",
+  "version": "1.0.0",
+  "description": "Copies each table's header text onto its cells as data-label so CSS can render rows as labelled cards on phones",
+  "type": "module",
+  "main": "./index.js",
+  "exports": { ".": "./index.js", "./package.json": "./package.json" },
+  "quartz": {
+    "name": "table-labels",
+    "displayName": "Table Labels",
+    "category": "transformer",
+    "version": "1.0.0",
+    "quartzVersion": ">=5.0.0",
+    "defaultOrder": 45,
+    "defaultEnabled": true,
+    "defaultOptions": {}
+  }
+}
