@@ -4,6 +4,7 @@
 import { cp, mkdir, readdir, rename } from "node:fs/promises"
 import { existsSync } from "node:fs"
 import { homedir } from "node:os"
+import { execFileSync } from "node:child_process"
 import path from "node:path"
 import { fileURLToPath } from "node:url"
 
@@ -35,13 +36,30 @@ const wanted = new Set(await listMarkdown(vaultDir))
 const present = existsSync(contentDir) ? await listMarkdown(contentDir) : []
 const stale = present.filter((p) => !wanted.has(p) && p !== "index.md")
 
+// rename() cannot cross drives (EXDEV, e.g. D: repo -> C: home); fall back to
+// the OS move command, which copies and removes the source itself.
+async function moveToTrash(src, dest) {
+  try {
+    await rename(src, dest)
+  } catch (err) {
+    if (err.code !== "EXDEV") throw err
+    if (process.platform === "win32") {
+      execFileSync("powershell", ["-NoProfile", "-Command", "Move-Item -LiteralPath $env:TRASH_SRC -Destination $env:TRASH_DEST"], {
+        env: { ...process.env, TRASH_SRC: src, TRASH_DEST: dest },
+      })
+    } else {
+      execFileSync("mv", [src, dest])
+    }
+  }
+}
+
 if (stale.length > 0) {
   const stamp = new Date().toISOString().replace(/[:.]/g, "-")
   const trashDir = path.join(homedir(), ".ai-trash", `toeic-notes-sync-${stamp}`)
   for (const rel of stale) {
     const target = path.join(trashDir, rel)
     await mkdir(path.dirname(target), { recursive: true })
-    await rename(path.join(contentDir, rel), target)
+    await moveToTrash(path.join(contentDir, rel), target)
   }
   console.log(`已移走 ${stale.length} 個來源已不存在的檔案 → ${trashDir}`)
   stale.forEach((rel) => console.log(`  - ${rel}`))

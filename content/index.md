@@ -12,6 +12,7 @@ tags:
 > **從這裡開始 → [[TOEIC MOC]]**（完整章節導覽）
 
 ## 幾條捷徑
+- [[TOEIC 閱讀考前 Cheatsheet]]：閱讀 75 分鐘時間分配、Part 5／6／7 解題捷徑，考前最後一頁。
 - [[TOEIC 文法 Cheatsheet]]：20 章文法濃縮成一頁，刷題前掃一遍。
 - [[不定代名詞圖解 another、the other、others]]：Part 5 幾乎必出的一題，用集合圖講清楚。
 - [[段落填空]]：Part 6 的兩種題型與作答順序。
