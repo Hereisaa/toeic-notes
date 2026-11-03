@@ -5,7 +5,7 @@ tags:
   - english/toeic
   - status/growing
 created: 2026-09-04
-updated: 2026-09-09
+updated: 2026-11-02
 aliases:
   - another
   - the other
@@ -21,7 +21,7 @@ part:
 ---
 # 不定代名詞圖解 another、the other、others
 
-> [!info] 這是 [[文法11 代名詞]] 考點 3 的深入圖解版。one、another、the other、others、the others 是多益 Part 5 每回幾乎必出的一題，錯的人多半不是不會背表格，而是沒看清楚「**總共有幾個、已經拿走幾個、剩下的算不算全部**」。
+> [!info] 這是 [[文法11 代名詞]] 考點 3 的深入圖解版。one、another、the other、others、the others 是多益 Part 5 可練習的題型，錯的人多半不是不會背表格，而是沒看清楚「**總共有幾個、已經拿走幾個、剩下的算不算全部**」。
 
 ## 定義
 
@@ -165,7 +165,7 @@ flowchart TD
 
 > [!tip] 多益出題方向
 > 1. 空格後有**單數名詞** → another；有**複數名詞** → other。
-> 2. 空格後**沒有名詞**、前面出現 **some** → others（每回約 1 題，最常考）。
+> 2. 空格後**沒有名詞**、前面出現 **some** → others（仍須確認集合範圍）。
 > 3. 句中出現 **two**、**both**、只有兩個選項 → the other。
 > 4. 句中把總數講死（of the ten…、all of them）、要指「其餘全部」 → the others。
 > 5. Part 6 會考跨句指涉：前一句提到 some…，後一句空格就填 others。

@@ -5,7 +5,7 @@ tags:
   - english/toeic
   - status/growing
 created: 2026-09-11
-updated: 2026-09-11
+updated: 2026-11-02
 aliases:
   - TOEIC Vocabulary Cheatsheet
   - 詞彙速查
@@ -211,7 +211,7 @@ equipment、information、merchandise、personnel、furniture、luggage、machin
 
 > [!warning] 位置固定的幾個副詞
 > - still 在 be 後、一般動詞前；yet 在句尾且限否定與疑問；already 用於肯定。
-> - respectively 一定放句尾，對應前面 A and B 的順序。
+> - respectively 按前述 A and B 的順序對應，常放對應項目之後，不限定整句句尾。
 > - almost 不能直接修飾名詞（almost **all** employees）；approximately 只放數字前。
 > - otherwise 三用法：句首連接副詞（否則）／unless otherwise noted／otherwise + 形容詞（在其他方面）。
 

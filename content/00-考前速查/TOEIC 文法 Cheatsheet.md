@@ -5,7 +5,7 @@ tags:
   - english/toeic
   - status/growing
 created: 2026-09-03
-updated: 2026-09-11
+updated: 2026-11-02
 aliases:
   - TOEIC Grammar Cheatsheet
 exam: toeic
@@ -44,7 +44,7 @@ book: 閱讀題庫大全
 ## 0. Part 5 三步解題法（每題 20 秒）
 1. **看選項**：同字不同詞性（考詞性，第 10～13 章）、同動詞不同形式（考時態／語態／一致，第 03～06 章）、四個不同的字（考字義與搭配，詞彙章）、連接詞與介系詞混雜（第 14、15、17 章）。
 2. **看空格前後 3 到 5 個字**：判斷缺的是主詞、動詞、受詞、補語還是修飾語（第 01、02 章）。
-3. **找線索詞**：時間副詞決定時態；be 後面有無受詞決定語態；逗號與連接詞決定子句結構。
+3. **找線索詞**：事件時間與上下文協助判斷時態；主詞與動作關係決定語態；逗號與連接詞決定子句結構。
 
 ## Section 1 句型
 ### 01 主詞、動詞
@@ -78,7 +78,7 @@ book: 閱讀題庫大全
 
 ### 05 主動態與被動態
 詳解 → [[文法05 主動態與被動態]]
-- 空格後**沒有受詞** → 被動 be + p.p.；有受詞 → 主動。
+- 主詞承受動作 → 考慮被動 be + p.p.；主詞執行動作 → 主動。有無受詞只是輔助線索。
 - 不及物動詞無被動：arrive、occur、happen、remain、rise、exist、take place。
 - 被動 + 介系詞固定搭配：be located in、be equipped with、be committed to、be required to、be known for、be involved in。
 - 授與動詞被動後仍可接一個名詞：He **was awarded** a bonus。
@@ -88,7 +88,7 @@ book: 閱讀題庫大全
 | 線索詞 | 時態 |
 |---|---|
 | yesterday、ago、last、in 2019 | 過去簡單 |
-| since、for + 期間、already、yet、so far、over the past、recently | 現在完成 |
+| since、so far、over the past 等（仍需核對語境；for、already、recently 非專屬） | 常見現在完成 |
 | by the time + 過去式 | 過去完成 had p.p. |
 | by next month、by the time + 現在式 | 未來完成 will have p.p. |
 | currently、now、at the moment、presently | 現在進行 |
